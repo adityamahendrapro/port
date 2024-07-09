@@ -1,0 +1,521 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "roboto slab", sans-serif;
+    background-color: rgb(64, 64, 64);
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  header {
+    display: inline;
+  }
+  
+  nav {
+    padding-inline: 150px;
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgb(32, 30, 30);
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  
+
+  nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+  nav li {
+    list-style-type: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(214, 157, 0);
+  }
+
+  /* /endhearder/ */
+
+  .intro1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 145px;
+    margin-right: 145px;
+    margin-top: 100px;
+  }
+
+  .text-home {
+    font-family: "roboto slab";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+
+  .perkenalan{
+    flex-direction: column;
+  }
+
+  .perkenalan h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+  }
+  .perkenalan h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 3rem;
+    color:  rgb(214, 157, 0);
+  }
+
+  .perkenalan a{
+    color: #ffffff;
+  }
+
+  .content1{
+    position: relative;
+    padding: 2rem; /* Ensure padding is applied to contain content */
+    overflow: hidden; /* Prevent overflow */
+    margin-top: 10%;
+  
+  }
+
+  .button-13 {
+    margin-top: 50px;
+    color:  rgb(214, 157, 0);
+    font-family: "roboto slab";
+    background-color: rgb(64, 64, 64);
+    border: 1px solid rgb(214, 157, 0); /* Mengubah border menjadi solid dengan warna yang diinginkan */
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+}
+
+  
+  .button-13:hover {
+    background-color:rgb(214, 157, 0);
+    color: #ffffff;
+  }
+  
+  .aboutme{
+    font-size: 3rem;
+    text-align: center; 
+    margin-top: 0;
+  }
+
+  .aboutme h3{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .ttg{
+    display: flex;
+    justify-content: center
+  }
+
+  .about{
+    text-align: justify;
+    text-justify:inter-word;
+    width: 80%;
+    height: 10%;
+    padding: 1rem;
+    display: flex;
+    gap: 70px;
+  }
+
+  .kotak a{
+    color: #ffffff;
+  }
+
+  .kotak2 a{
+    color: #ffffff;
+  }
+
+
+
+  .about h1{
+    color: rgb(214, 157, 0);
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+
+  .textintro1{
+    border-radius: 1rem;
+    color: rgb(147, 147, 147);
+    
+  }
+
+  
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.img img {
+    border: 5px solid #ffffff; /* White border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 80%; /* Responsive width */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.img img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+.img img:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.img img.rotate {
+    animation: rotate 10s infinite linear; /* Infinite rotation */
+}
+
+.img img.shadow-pulse {
+    animation: shadowPulse 2s infinite;
+}
+
+@keyframes shadowPulse {
+    0%, 100% {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+}
+
+
+.content2{
+  margin-top: 10%;
+}
+
+.tech h3{
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tech h4{
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 1.3rem;
+  margin-bottom: 3rem;
+  color: rgb(214, 157, 0);
+}
+  
+
+.tech {
+  margin: 20px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tech .technology {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+.tech .technology svg {
+  padding: 10px;
+  border-radius: 10px;
+  background: #e7e7e7;
+  width: 12%;
+  height: auto;
+}
+
+.content3 h3{
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+
+
+.content3{
+  position: relative;
+  margin-top: 20%;
+}
+
+.frame3{
+  display:  flex;
+  justify-content:center ;
+  gap: 10rem;
+}
+
+.projectframe1{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.header{
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+
+.header h2{
+  color: rgb(214, 157, 0);
+}
+
+.collection{
+  margin-bottom: 1rem;
+}
+
+.collection h2{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.collection p{
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  color: white;
+}
+
+.content4{
+  position: relative;
+  align-items: center;
+  height: 30rem;
+  margin-top: 5%;
+  
+}
+
+
+
+.content4 h3 {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.framebox{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+
+.content4 .box{
+  position: relative;
+  background-color: rgb(231, 231, 231);
+  height: 320px;
+  width: 350px;
+  border-radius: 10px;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.content4 .box img{
+  position: relative;
+  height: 190px;
+  width: 300px;
+  border-radius: 10px;
+  
+}
+
+.title{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title a{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.title span {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.title span a{
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.title span a:hover{
+  color: rgb(214, 157, 0);
+}
+
+.footer {
+  position: relative;
+  background: rgb(32, 30, 30);
+  min-height: 100px;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+  color: rgb(214, 157, 0);;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: rgb(214, 157, 0);;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color:rgb(214, 157, 0);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: rgb(214, 157, 0);
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+ul.menu {
+  padding-left: 0;
+}
+
+ul.social-icon{
+  padding-left: 0;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column; /* Stack elements in a column on smaller screens */
+  }
+
+  nav ul {
+      align-items: center;
+  }
+  .text-home {
+      font-size: 3rem; /* Smaller text on smaller screens */
+  }
+
+  .ttg {
+    flex-direction: column; /* Stacks flex items vertically */
+}
+
+.about, .img {
+    width: 100%; /* Takes full width of the container */
+    text-align: center; /* Ensures text is centered in its block */
+    align-items: center;
+}
+
+.img img {
+    width: 80%; 
+    margin-top: 20px; 
+    margin-top: 0;
+}
+
+.tech .technology {
+  justify-content: center; /* Center-aligns SVG icons */
+  flex-wrap: wrap; /* Allows icons to wrap within the container */
+}
+
+.tech .technology svg {
+  width: 15%; /* Slightly larger to fill space on smaller screens */
+  min-width: 80px; /* Maintains minimum width */
+}
+
+.frame3{
+  display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;  
+    width: 100%; 
+    gap: 10px;
+}
+
+.content4{
+  margin-bottom: 600px; 
+}
+
+.title{
+  position: relative;
+  padding-top: 15px;
+}
+
+.framebox  {
+  position: relative;
+  flex-direction: column;
+  align-items: center; 
+}
+}
